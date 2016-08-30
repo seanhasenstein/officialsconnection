@@ -1,0 +1,292 @@
+
+
+
+// navigation-section.scss
+
+
+.nav-container {
+    background: #2f2f2f;
+    height: 90px;
+    font-family: 'Raleway', sans-serif;
+
+    @media screen and (max-width: 767px) {
+    	height: auto;
+    }
+}
+
+.navbar-default {
+    background-color: #2f2f2f;
+    border: none;
+    border-radius: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .navbar-header {
+
+		@media screen and (max-width: 767px) {
+			height: 74px;
+
+			.navbar-toggle {
+			    margin-top: 20px;
+			    margin-right: 20px;
+			    border: none;
+
+			    &:hover, &:active, &:focus {
+			    	background: transparent;
+			    }
+			}
+
+			.icon-bar {
+			    background-color: #999;
+			}
+		}
+	}
+}
+
+.navbar-nav {
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+.navbar-collapse, .navbar-collapse .navbar-right .collapse .in {
+
+	@media screen and (max-width: 767px) {
+	    border: none;
+	    box-shadow: none;
+	}
+}
+
+/******* THIS ALLOWS THE NAV DROPDOWN TO WORK ON HOVER ********/
+.nav-container .dropdown:hover .dropdown-menu {  
+	
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 767px) {
+        position: static;
+    }
+}
+.navbar-default .navbar-nav>.open>a {
+	background: #2f2f2f;
+	color: #fff;
+
+	&:hover, &:active, &:focus, &:link, &:visited {
+		background: #2f2f2f;
+		color: #fff;
+	}
+}
+.navbar-nav>li>.dropdown-menu {
+    background: #2f2f2f;
+    border-radius: 0;
+    border-top: none;
+}
+.dropdown-menu>li>a {
+	color: #ccc;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 25px 0;
+    margin: 0 36px;
+    text-align: center;
+    font-size: 13px;
+
+    @media screen and (max-width: 767px) {
+	    padding: 22px 0 !important;
+	    margin: 0px 50px;
+	    text-align: left;
+	    color: #ccc !important;
+	    font-size: 14px;
+
+	    &:hover {
+			background: #222;
+		}
+    }
+
+    &:hover, &:active, &:focus {
+    	background: #2f2f2f;
+    	color: #fff;
+    }
+}
+.nav>li.dropdown:hover > a, .nav>li.dropdown:focus > a, .nav>li.dropdown:active > a, .nav>li.dropdown:visited > a, .nav>li.dropdown:link > a {
+	background: #2f2f2f !important;
+	color: #fff !important;
+	border-top: 5px solid #ed1c24;
+
+	@media screen and (max-width: 767px) {
+		border-top: none;
+	}
+}
+
+	/****** MOBILE STYLING **********/
+
+		.navbar-default .navbar-nav > .open > a:link {
+			border-bottom: none;
+			padding-bottom: 10px;
+		}
+		li.dropdown.open {
+		    border-bottom: 1px solid #000;
+		    padding-bottom: 15px;
+		}
+
+
+
+
+/******* END OF THIS ALLOWS THE NAV DROPDOWN TO WORK ON HOVER ********/
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 30.0075px 0 35.0075px;
+    margin: 0 22px;
+    border-top: 5px solid #2f2f2f;
+    font-size: 16px;
+
+    @media screen and (max-width: 1030px) {
+		font-size: 15px;
+	}
+
+	@media screen and (max-width: 940px) {
+		font-size: 13px;
+		margin: 0 20px;
+	}
+
+	@media screen and (max-width: 829px) {
+		margin: 0 19px;
+	}
+
+	@media screen and (max-width: 767px) {
+		border-top: none;
+		border-bottom: 1px solid #222;
+		margin: 0;
+		padding: 30px 25px;
+		font-size: 15px;
+		background: #2f2f2f;
+
+		&.home {
+			border-top: 1px solid #222;
+
+			&:hover {
+				border-top: 1px solid #222;
+			}
+		}
+	}
+
+    &.register {
+    	background: #d9181f;
+    	border: none;
+    	padding: 12.0075px 15px;
+    	margin: 21px 0 21px 10px;
+    	border-radius: 5px;
+
+    	@media screen and (max-width: 1030px) {
+			margin-right: 15px;
+		}
+
+		@media screen and (max-width: 767px) {
+			border-radius: 0;
+			margin: 0;
+			padding: 30px 25px;
+		}
+
+    	&:hover {
+    		border: none;
+    		background: #c6141b;
+    	}
+    }
+
+    &:hover, &:active, &:focus {
+    	border-top: 5px solid #ed1c24;
+    	color: #fff;
+
+    	@media screen and (max-width: 767px) {
+    		border-top: none;
+    		background: #292929;
+    	}
+    }
+}
+
+.navbar-brand {
+
+	h1 {
+		color: #fff;
+		margin-top: 1px;
+		font-weight: 700;
+		font-size: 32px;
+
+		@media screen and (max-width: 1030px) {
+			font-size: 30px;
+		}
+
+		@media screen and (max-width: 940px) {
+			font-size: 24px;
+			margin-top: 8px;
+		}
+
+		@media screen and (max-width: 829px) {
+			font-size: 20px;
+			margin-top: 12px;
+		}
+
+		@media screen and (max-width: 767px) {
+			font-size: 27px;
+			margin-top: 0;
+	    }
+
+	    @media screen and (max-width: 360px) {
+			font-size: 23px;
+			margin-top: 2px;
+	    }
+	}
+
+	h2 {
+		color: #fff;
+		font-size: 11.1px;
+		margin-top: -9px;
+		font-weight: 300;
+		text-transform: uppercase;
+
+		@media screen and (max-width: 1030px) {
+			font-size: 10.2px;
+		}
+
+		@media screen and (max-width: 940px) {
+			font-size: 8.2px;
+		}
+
+		@media screen and (max-width: 829px) {
+			font-size: 6.8px;
+		}
+
+		@media screen and (max-width: 767px) {
+			font-size: 9.4px;
+	    }
+
+	    @media screen and (max-width: 360px) {
+	    	font-size: 7.85px;
+	    }
+
+    	.red {
+    		color: #ed1c24;
+    		text-transform: lowercase;
+    	}
+	}
+}
+
+.headerImage {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    /*position: absolute;*/
+    z-index: 1;
+    max-width: 100%;
+    height: 234px;
+    background: url('images/header.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /*img {
+    	width: 100%;
+    }*/
+}

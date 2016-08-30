@@ -1,0 +1,119 @@
+
+
+
+// submission-page.scss
+
+
+
+.submission-page {
+	font-family: 'Open Sans', sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+
+	@media screen and (max-width: 850px) {
+		max-width: 100%;
+	}
+
+	.inner {
+		max-width: 787px;
+		margin: 0 auto;
+
+		@media screen and (max-width: 850px) {
+			max-width: 100%;
+			margin: 0 23px;
+		}
+
+		a {
+			color: #000;
+
+			&:hover {
+				color: #d9181f;
+				text-decoration: none;
+			}
+		}
+
+		h1 {
+			font-size: 25px;
+			text-align: left;
+			font-weight: 900;
+			margin-bottom: 33px;
+			color: #333;
+
+			@media screen and (max-width: 820px) {
+				line-height: 38px;
+				margin-top: 0;
+			}
+		}
+
+		h2 {
+			text-transform: uppercase;
+    		font-weight: 700;
+    		font-size: 21px;
+		}
+
+		h3 {
+			font-weight: 700;
+			font-size: 30px;
+			color: #333;
+			text-align: center;
+		}
+
+		h4 {
+			margin-top: 35px;
+			margin-bottom: 0;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #333;
+		}
+
+		h5 {
+			margin: 35px 0;
+			font-weight: 500;
+			font-size: 16px;
+
+			@media screen and (max-width: 650px) {
+				line-height: 25px;
+				text-align: center;
+			}
+		}
+
+		p {
+		    font-weight: 300;
+		    text-indent: -9px;
+		    line-height: 24px;
+		    margin-top: 20px;
+		    margin-left: 10px;
+		    font-size: 15px;
+
+		    a {
+		    	font-weight: 500;
+		    }
+		}
+
+		ul {
+			margin-top: 15px;
+   			margin-bottom: 30px;
+
+			li {
+			    font-weight: 300;
+			    font-size: 15px;
+			    margin: 10px 0;
+
+			    a {
+			    	color: #333;
+			    }
+
+			    span.bold {
+				    font-weight: 700;
+				}
+
+				span.italic {
+				    font-weight: 700;
+				    margin-left: 5px;
+				}
+			}
+		}
+	}
+
+}

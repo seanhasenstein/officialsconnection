@@ -1,0 +1,28 @@
+
+
+
+// offline-forms-page.scss
+
+
+
+.offline-page {
+	height: 380px;
+
+	p {
+		margin-top: 45px;
+	}
+	
+	a {
+	    display: block;
+	    color: #333;
+	    margin-left: 15px;
+	    margin-bottom: 25px;
+	    font-weight: 600;
+
+	    @media screen and (max-width: 750px) {
+	    	margin-left: 46px;
+		    margin-right: 35px;
+		    text-indent: -8px;
+	    }
+	}
+}

@@ -1,0 +1,79 @@
+/*
+Theme Name: Officials Connection
+Author: Sean Hasenstein
+Author URI: http://seanhasenstein.com
+Description: This theme is used for Officials Connection and the Wisconsin Basketball Yearbook Officials Camps. It is developed with Bootstrap and uses Font Awesome Icons.
+Version: 1.1
+License: GNU General Public License v2 or later
+
+Use this theme to make something cool, have fun, and share what you've learned with others.
+*/
+
+body, html {
+	overflow-x: hidden;
+}
+
+body {
+	background: url('images/retina_wood.png') repeat;
+}
+
+
+@import 'navigation-section';
+@import 'home-section';
+@import 'staff-page';
+@import 'registration-page';
+@import 'registrationList-page';
+@import 'submission-page';
+@import 'offline-forms-page';
+@import 'contact-page';
+
+
+
+span.price {
+    font-size: 14px;
+    /*font-weight: 600;*/
+    color: #000;
+}
+
+.evaluation-page {
+
+	.gform_wrapper ul li.field_description_below div.ginput_container_radio {
+	    margin-top: 0 !important;
+	}
+
+	.gform_wrapper ul.gfield_radio li {
+	    padding: 0 !important;
+	}
+
+	.gform_wrapper ul li.gfield {
+	    margin-top: 35px;
+	    padding-top: 0;
+	}
+
+	.gform_wrapper .gfield_radio li label {
+	    margin: 2px 0 0 24px !important;
+	    font-size: 13px !important;
+	}
+
+	.gform_body input {
+	    height: 19px !important;
+	}
+
+	input#input_19_22, input#input_19_32, input#input_20_22, input#input_20_32 {
+	    height: 40px !important;
+	    background: #fff;
+	}
+
+	div#gforms_confirmation_message_19, div#gforms_confirmation_message_20 {
+		margin-top: 28px;
+		font-style: italic;
+		font-weight: bold;
+		padding-top: 28px;
+		border-top: 1px solid #eee;
+		line-height: 24px;
+	}
+
+	p.signiture {
+	    margin-top: 23px;
+	}
+}
